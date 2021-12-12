@@ -2,17 +2,17 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/walltest.glb-e91b76e22e6fe2bbe6fde2401ac5e705.scn"
+path="res://.import/dungeonHallway.glb-92a7d524a402bf72e47fc5ff2613ebd1.scn"
 
 [deps]
 
-source_file="res://walltest.glb"
-dest_files=[ "res://.import/walltest.glb-e91b76e22e6fe2bbe6fde2401ac5e705.scn" ]
+source_file="res://Assets/dungeonHallway.glb"
+dest_files=[ "res://.import/dungeonHallway.glb-92a7d524a402bf72e47fc5ff2613ebd1.scn" ]
 
 [params]
 
-nodes/root_type="Spatial"
-nodes/root_name="Scene Root"
+nodes/root_type="StaticBody"
+nodes/root_name="dungeonHallwayRoof"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0

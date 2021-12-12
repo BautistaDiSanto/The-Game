@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://dungeonFloor01.tscn" type="PackedScene" id=1]
+[ext_resource path="res://dungeonDoor01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dungeonPillar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://dungeonWall03.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dungeonWall01.tscn" type="PackedScene" id=5]
+[ext_resource path="res://dungeonWall02.tscn" type="PackedScene" id=6]
+[ext_resource path="res://dungeonHallwayRoof.tscn" type="PackedScene" id=7]
+
+[sub_resource type="Environment" id=1]
+
+[node name="testLevel" type="Spatial"]
+
+[node name="assets" type="Spatial" parent="."]
+
+[node name="dungeonDoor01" parent="assets" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="dungeonFloor01" parent="assets" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="dungeonFloor02" parent="assets" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="dungeonFloor03" parent="assets" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+
+[node name="dungeonWall01" parent="assets" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.116247, 0, 9.25041e-08 )
+
+[node name="dungeonWall03" parent="assets" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.03958, 1.94942, 5.9557 )
+
+[node name="dungeonWall02" parent="assets" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08427, 2.05148, 1.98406 )
+
+[node name="dungeonWall04" parent="assets" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99661, 0.0124339, 9.83631 )
+
+[node name="dungeonWall05" parent="assets" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.97884, 1.94942, 6.05745 )
+
+[node name="dungeonWall06" parent="assets" instance=ExtResource( 6 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -2.01406, 2.05148, 2.02841 )
+
+[node name="dungeonWall07" parent="assets" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.9351, 0.0124339, 10.2155 )
+
+[node name="dungeonPillar" parent="assets" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.57355, 0, 4 )
+
+[node name="dungeonPillar2" parent="assets" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.57355, 0, 8 )
+
+[node name="dungeonPillar3" parent="assets" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.65776, 0, 4 )
+
+[node name="dungeonPillar4" parent="assets" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.65776, 0, 8 )
+
+[node name="dungeonHallwayRoof" parent="assets" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00991786, 4.02261, 6.07841 )
+
+[node name="lights" type="Spatial" parent="."]
+
+[node name="OmniLight" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.55617, 3.56469 )
+light_energy = 0.8
+
+[node name="OmniLight2" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.55617, 9.03752 )
+light_energy = 0.8
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )

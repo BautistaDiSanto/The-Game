@@ -2,17 +2,17 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/walltest02.glb-61f5e44c9578192beefd056edc739093.scn"
+path="res://.import/dungeonFloor01.glb-56298127ea78a655e9ce6d972e323eeb.scn"
 
 [deps]
 
-source_file="res://walltest02.glb"
-dest_files=[ "res://.import/walltest02.glb-61f5e44c9578192beefd056edc739093.scn" ]
+source_file="res://Assets/dungeonFloor01.glb"
+dest_files=[ "res://.import/dungeonFloor01.glb-56298127ea78a655e9ce6d972e323eeb.scn" ]
 
 [params]
 
-nodes/root_type="Spatial"
-nodes/root_name="Scene Root"
+nodes/root_type="StaticBody"
+nodes/root_name="dungeonFloor01"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
